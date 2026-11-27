@@ -1,0 +1,7 @@
+
+Failure case				        Status code	            Message
+Row 1 -> Missing resume input		    400		    "You must provide either 'resume_file' or 'resume_text'". (Request ID: 4a8f12c9)
+Row 2 -> Unsupported Media Type		    415		    "Unsupported file type 'image/png'. Only PDF and TXT are allowed."
+Row 3 -> Request Entity Too Large	    413		    "Resume is too long (~12892 tokens). Maximum allowed is 4000 tokens. (Request ID: 89d46118)"
+Row 4 -> LLM Timeout			        503		    "The AI service took too long to respond (timeout after 0.01s). Please try again shortly. (Request ID: 8f7f3563)"
+Row 5 ->  Upstream AI provider error	502		    "Upstream AI provider error occurred. Please try again later. (Request ID: abe5ca1e)"
